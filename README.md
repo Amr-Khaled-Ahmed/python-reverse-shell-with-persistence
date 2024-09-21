@@ -27,7 +27,7 @@ This project is a **Python-based reverse shell** with **Windows registry persist
 
 ## How It Works
 
-1. **Socket Creation**: The script creates a socket connection to a specified IP and port (configured as `192.168.1.109` and `4444` by default). You can modify these settings based on your testing environment.
+1. **Socket Creation**: The script creates a socket connection to a specified IP and port (configured as `any IP` and `any port` by default). You can modify these settings based on your testing environment.
    
 2. **Command Reception & Execution**: After a connection is established, the attacker can send commands. The script executes these commands on the victim machine and returns the output or error back to the attacker.
 
@@ -46,4 +46,4 @@ This project is a **Python-based reverse shell** with **Windows registry persist
 
 1. Use a tool like **Netcat** to set up a listener on your attacker machine:
    ```bash
-   nc -lvp 4444
+   nc -lvp (port num)
